@@ -5,16 +5,15 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* overflow-x: hidden; */
 }
 
 code { font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace; }
-.topbar { text-align: center; }
-.topbar a {
-  text-decoration: none;
-  padding: 0 5vw;
-  display: inline;
-  font-size: 1.2vw;
+.topbar { 
+  margin: 0; padding: 1vh 0; width: auto; font-size: 20px; 
+  background-color: aliceblue; display: flex; justify-content: center; 
 }
+.topbar a { text-decoration: none; padding: 0 5vw; width: 20vw; text-align: center; }
 
 .Home {
   text-align: center;

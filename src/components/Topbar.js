@@ -3,12 +3,10 @@ import './allStyle.css';
 
 const Topbar = () => {
     return (
-        <div>
-            <ul className="topbar">
-                <a href="/">Home</a>
-                <a href="/login">Login</a>
-                <a href="/student-council">Student Council</a>
-            </ul>
+        <div className="topbar">
+            <a href="/">Home</a>
+            <a href="/login">Login</a>
+            <a href="/student-council">Student Council</a>
         </div>
     );
     }
