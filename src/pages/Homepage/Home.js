@@ -13,6 +13,6 @@ function Home() {
 	</span>
   </div>
   );
-  }
+}
 
 export default Home;
