@@ -7,29 +7,24 @@ const StudentCouncil = () => {
     return (
         <div className="StudentCouncilPage">
 
-            <img
-                src={GroupPhoto}
-                style={{
-                    width: "100%", "z-index": "-1", position: "absolute", top: "0", left: "0",
-                    filter: "blur(5px) brightness(0.5)", height: "100vh"
-                }}
-                alt="~">
-            </img>
+            <div className="page" style={{ height: "85vh", marginTop: "0vh" }}>
+                <img src={GroupPhoto} className="GroupPhoto" alt="~"></img>
 
-            <div className="page" style={{height: "100vh"}}>
-                <div className="center" style={{
-                    display: "flex", flexDirection: "column",
-                }}>
+                <div className="center" style={{ marign: 0, position: "absolute", top: "50%", left: "50%", msTransform: "translate(-50%, -50%)", transform: "translate(-50%, -50%)" }}>
                     <div className="title">
-                        <img 
+                        <img
                             src={AicsLogo}
-                            style={ {maxHeight: "30vh", maxWidth: "80vw", padding: "2vh", margin: "3vh", border: "1vh solid", borderColor: "white"} }
+                            style={{ maxHeight: "30vh", maxWidth: "80vw", padding: "2vh", margin: 0, border: "1vh solid", borderColor: "white", borderRadius: "3vw", backgroundColor: "#F8F0E3" }}
                             alt="-AICS-"
                         ></img>
-                        <div style={{fontSize: "20vh"}}>Student Council</div>
-                        2022-2023
+                        <div style={{fontSize: "100px", fontFamily: "italianno", fontWeight: "bolder" }}>Student Council</div>
+                        <div style={{fontSize: "100px", fontFamily: "diplomata sc"}}>22/23</div>
                     </div>
                 </div>
+            </div>
+
+            <div className="page" style={{ height: "80vh", backgroundColor: "#941A1C" }}>
+                <div className="meet us">Meet Us</div>
             </div>
 
         </div>

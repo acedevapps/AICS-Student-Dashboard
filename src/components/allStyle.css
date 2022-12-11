@@ -9,36 +9,20 @@ body {
 }
 
 code { font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace; }
-.topbar { 
-  margin: 0; padding: 1vh 0; width: auto; font-size: 20px; 
-  background-color: aliceblue; display: flex; justify-content: center; 
-}
-.topbar a { text-decoration: none; padding: 0 5vw; width: 20vw; text-align: center; }
-
-.Home {
-  text-align: center;
-}
-
-.Home-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.topbar {
+  margin: 0;
+  width: auto;
+  font-size: 20px;
+  position: relative;
+  height: min-content;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  padding: 1vh;
+  font-family: "Roboto";
 }
+.topbar a { text-decoration: none; width: 20vw; text-align: center; height: min-content; color: white; }
 
 .link {
   color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

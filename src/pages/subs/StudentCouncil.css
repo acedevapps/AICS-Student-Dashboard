@@ -1,2 +1,49 @@
-body { background-color: #461706; color: white;}
-.title { font-family: "eb garamond"; font-size: 12.5vw; text-align: center; text-shadow: #ffbb00 0px 0 50px;}
+body { background-color: #5E0A0B; color: white;}
+.title { text-align: center; text-shadow: #FFD500 0px 0 50px; }
+.topbar { font-family: "roboto slab"; }
+
+.topbar {
+    -webkit-animation: changeColor 1s forwards;
+    animation: changeColor 1s forwards;
+}
+
+@-webkit-keyframes changeColor {
+    100% {
+        background-color: #5E0A0B;
+    }
+}
+
+@keyframes changeColor {
+    100% {
+        background-color: #5E0A0B;
+    }
+}
+
+.GroupPhoto {
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    filter: blur(2px) brightness(0.5);
+}
+
+.GroupPhoto {
+    -webkit-animation: blur 3s forwards;
+    animation: blur 3s forwards;
+}
+
+@-webkit-keyframes blur {
+    100% {
+        filter: blur(0px) brightness(1);
+    }
+}
+
+@keyframes blur {
+    100% {
+        filter: blur(0px) brightness(1);
+    }
+}

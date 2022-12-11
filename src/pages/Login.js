@@ -8,7 +8,6 @@ const Login = () => {
     const onGoogleSignIn = (user) => {
         let userCred = user.credential;
         let payload = jwt_deocde(userCred);
-        console.log(payload);
         setuser(payload);
     };
     useScript("https://accounts.google.com/gsi/client", () => {
