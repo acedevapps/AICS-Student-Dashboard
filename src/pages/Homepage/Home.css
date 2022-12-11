@@ -1,0 +1,12 @@
+.Home {
+	text-align: center;
+	height: 100%;
+	line-height: 50vh;
+	background-color: #f37220;
+}
+span
+{
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 18px;
+}

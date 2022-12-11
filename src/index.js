@@ -4,7 +4,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 
 import Topbar from './components/Topbar';
-import Home from './pages/Home';
+import Home from './pages/Homepage/Home';
 import Error from './pages/Error';
 import Login from './pages/Login';
 import StudentCouncil from './pages/subs/StudentCouncil';
