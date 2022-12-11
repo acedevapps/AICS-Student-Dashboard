@@ -11,16 +11,16 @@ import StudentCouncil from './pages/subs/StudentCouncil';
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: '/AICS-Student-Dashboard/',
     element: <Home />,
     errorElement: <Error />,
   },
   {
-    path: '/login',
+    path: '/AICS-Student-Dashboard/login',
     element: <Login />,
   },
   {
-    path: '/student-council',
+    path: '/AICS-Student-Dashboard/student-council',
     element: <StudentCouncil />,
   }
 ])
