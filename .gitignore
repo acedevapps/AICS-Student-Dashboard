@@ -24,3 +24,4 @@ yarn-error.log*
 
 #EEEEEEEEEEEEEEEEE
 /StudentDashboardAPI
+/cors-anywhere

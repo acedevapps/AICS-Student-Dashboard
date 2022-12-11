@@ -1,4 +1,4 @@
-body { background-color: #5E0A0B; color: white;}
+body { background-color: #5E0A0B; color: white; }
 .title { text-align: center; text-shadow: #FFD500 0px 0 50px; }
 .topbar { font-family: "roboto slab"; }
 
@@ -8,16 +8,22 @@ body { background-color: #5E0A0B; color: white;}
 }
 
 .page {
+    max-width: 100vw;
+    margin: 0;
     position: relative;
 }
 
 h1 {
-    font-size: 6vh;
+    font-size: 40px;
     font-family: "times new roman";
 }
 
 p {
-    font-size: 3vh;
+    font-size: 20px;
+}
+
+.page {
+    height: 80vh;
 }
 
 .center {
@@ -70,4 +76,16 @@ p {
     100% {
         filter: blur(0px) brightness(1);
     }
+}
+
+label {
+    font-size: 3vh;
+}
+
+input, textarea {
+    font-family: "roboto slab";
+    width: 100vh;
+    max-width: 75vw;
+    font-size: 3vh;
+    margin-bottom: 5vh;
 }
