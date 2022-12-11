@@ -23,16 +23,16 @@ const Login = () => {
         console.log(parts[1])
 
         if (parts[1] === "aics.espritscholen.nl") {
-            localStorage.setItem("login", JSON.stringify("yeeee"));
+            const token = generateToken();
+            localStorage.setItem("login", token);
             localStorage.setItem("user", parts[0]);
-            
             fetch('http://localhost:8080/users/'+parts[0])
                 .then(response => {
                     if (response.status === 404) {
                         const requestOptions = {
                             method: 'POST',
                             headers: { 'Content-Type': 'application/json' },
-                            body: JSON.stringify({id: "0", name: payload.name, mail: parts[0], cred: userCred, token: generateToken(), link: payload.picture})
+                            body: JSON.stringify({id: "0", name: payload.name, mail: parts[0], cred: userCred, token: token, link: payload.picture})
                             
                         }; // http://localhost:8080/users
                         fetch('http://localhost:8080/users', requestOptions)
@@ -53,7 +53,14 @@ const Login = () => {
                                 console.error('There was an error!', error);
                             });
                     } else {
-
+                        fetch('http://localhost:8080/users/'+parts[0]+'/'+token)
+                        .then(response => {
+                            if (response.json().message === "user token replaced") {
+                                console.log("token updated")
+                            } else {
+                                console.log("token not updated")
+                            }
+                        })
                     }
                 })
                 .then(data => this.setState({ totalReactPackages: data.total }));

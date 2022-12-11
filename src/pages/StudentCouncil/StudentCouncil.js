@@ -13,12 +13,13 @@ const StudentCouncil = () => {
                 <div className="center" style={{ marign: 0, position: "absolute", top: "50%", left: "50%", msTransform: "translate(-50%, -50%)", transform: "translate(-50%, -50%)" }}>
                     <div className="title">
                         <img
+                            className="fadable1"
                             src={AicsLogo}
                             style={{ maxHeight: "30vh", maxWidth: "80vw", padding: "2vh 0", margin: 0, border: "1vh solid", borderColor: "white", borderRadius: "3vw", backgroundColor: "#F8F0E3" }}
                             alt="-AICS-"
-                        / >
-                        <div style={{fontSize: "12vw", fontFamily: "italianno", fontWeight: "bolder" }}>Student Council</div>
-                        <div style={{fontSize: "8vw", fontFamily: "diplomata sc"}}>22/23</div>
+                        />
+                        <div className="fadable2" style={{fontSize: "12vw", fontFamily: "italianno", fontWeight: "bolder"}}>Student Council</div>
+                        <div className="fadable3" style={{fontSize: "8vw", fontFamily: "diplomata sc"}}>22/23</div>
                     </div>
                 </div>
             </div>
