@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/AICS-Student-Dashboard/static/css/main.e16af1e5.css",
-    "main.js": "/AICS-Student-Dashboard/static/js/main.424470bb.js",
+    "main.js": "/AICS-Student-Dashboard/static/js/main.f194dda9.js",
     "static/js/787.be995dda.chunk.js": "/AICS-Student-Dashboard/static/js/787.be995dda.chunk.js",
     "static/media/GroupPhoto.jpg": "/AICS-Student-Dashboard/static/media/GroupPhoto.c6915c89af37a68d32e4.jpg",
     "static/media/AicsLogo.png": "/AICS-Student-Dashboard/static/media/AicsLogo.c435e4d7fcb1357060f8.png",
     "index.html": "/AICS-Student-Dashboard/index.html",
     "main.e16af1e5.css.map": "/AICS-Student-Dashboard/static/css/main.e16af1e5.css.map",
-    "main.424470bb.js.map": "/AICS-Student-Dashboard/static/js/main.424470bb.js.map",
+    "main.f194dda9.js.map": "/AICS-Student-Dashboard/static/js/main.f194dda9.js.map",
     "787.be995dda.chunk.js.map": "/AICS-Student-Dashboard/static/js/787.be995dda.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e16af1e5.css",
-    "static/js/main.424470bb.js"
+    "static/js/main.f194dda9.js"
   ]
 }
