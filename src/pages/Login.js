@@ -3,6 +3,35 @@ import { useScript } from "../hooks/useScript";
 import jwt_deocde from "jwt-decode";
 
 const Login = () => {
+    
+    if (localStorage.getItem("login") !== null) {
+    const token = localStorage.getItem("login")
+    const user = localStorage.getItem("user")
+
+    fetch('http://localhost:8080/users/'+user).then(response => response.json()).then(response => {
+        console.log(response.message)
+        if (response.message !== "user not found") {
+          
+            if (response.token === token) {
+                return (
+            <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100vh"}}>
+                {!user && <div ref={googlebuttonref}></div>}
+                {user && (
+                    <div>
+                        <h1>{localStorage.getItem("name")}</h1>
+                        <img src={localStorage.getItem("picture")} alt="profile" />
+                        <p>{localStorage.getItem("user")}</p>
+                        <button onClick={() => { setuser(false); }}>Logout</button>
+                    </div>
+                )}
+            </div>
+        );
+            }
+        
+        }
+    })
+  }
+    
     const googlebuttonref = useRef();
     const [user, setuser] = useState(false);
 
@@ -26,13 +55,17 @@ const Login = () => {
             const token = generateToken();
             localStorage.setItem("login", token);
             localStorage.setItem("user", parts[0]);
+            localStorage.setItem("name", payload.name);
+            localStorage.setItem("picture", payload.picture);
+            
             fetch('http://localhost:8080/users/'+parts[0])
                 .then(response => {
                     if (response.status === 404) {
                         const requestOptions = {
                             method: 'POST',
                             headers: { 'Content-Type': 'application/json' },
-                            body: JSON.stringify({id: "0", name: payload.name, mail: parts[0], cred: userCred, token: token, link: payload.picture})
+                            body: JSON.stringify({id: "0", name: payload.name, mail: parts[0], cred: userCred, token: token, link: payload.picture}),
+                            mode: 'no-cors'
                             
                         }; // http://localhost:8080/users
                         fetch('http://localhost:8080/users', requestOptions)

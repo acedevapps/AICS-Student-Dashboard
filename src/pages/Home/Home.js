@@ -1,8 +1,8 @@
 import './Home.css'
 
-function TopPage() {
+function TopPage() { 
 	return <div className="top-page">
-		<h1>Welcome!</h1>
+		<h1><strong>Welcome</strong>, {localStorage.getItem("name")}!</h1>
 	  	<p>Where are we off to today?</p>
 	  </div>;
 }

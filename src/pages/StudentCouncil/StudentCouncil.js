@@ -18,19 +18,22 @@ const StudentCouncil = () => {
                             style={{ maxHeight: "30vh", maxWidth: "80vw", padding: "2vh 0", margin: 0, border: "1vh solid", borderColor: "white", borderRadius: "3vw", backgroundColor: "#F8F0E3" }}
                             alt="-AICS-"
                         />
-                        <div className="fadable2" style={{fontSize: "12vw", fontFamily: "italianno", fontWeight: "bolder"}}>Student Council</div>
-                        <div className="fadable3" style={{fontSize: "8vw", fontFamily: "diplomata sc"}}>22/23</div>
+                        <div className="fadable2" style={{fontSize: "8vw", marginTop: "3vh", fontFamily: "Poppins", fontWeight: 600 }}>Student Council</div>
                     </div>
                 </div>
             </div>
 
             <div className="page" style={{ backgroundColor: "#941A1C" }}>
-                <div className="left" style={{ position: "absolute", top: "50%", left: "2%", msTransform: "translateY(-50%)", transform: "translateY(-50%)", textAlign: "center", width: "46%" }}>
+                <div className="left" style={{ position: "absolute", top: "50%", left: "2vw", msTransform: "translateY(-50%)", transform: "translateY(-50%)", textAlign: "center", width: "46vw" }}>
                     <h1>Who We Are</h1>
                     <p>placeholder placeholder placeholder</p>
                 </div>
                 <iframe width="50%" height="80%" src="https://www.youtube.com/embed/o5Ov7gsOr6w" title="Student Council Trailer" allowFullScreen="allowfullscreen" style={{ position: "absolute", top: "50%", right: "2%", msTransform: "translateY(-50%)", transform: "translateY(-50%)" }} / >
             </div>
+
+            <svg className="connector" width="500" height="500">
+                <line x1="10" y1="10" x2="100" y2="100" style={{ stroke: "white", strokeWidth: "10" }} />
+            </svg>
 
             <div className="page" style={{ backgroundColor: "#DF1E26" }}>
                 <div className="right" style={{ position: "absolute", top: "50%", right: "5%", msTransform: "translateY(-50%)", transform: "translateY(-50%)", textAlign: "center", width: "46%" }}>
@@ -45,14 +48,14 @@ const StudentCouncil = () => {
 
             <div className="page" style={{ backgroundColor: "#F37220" }}>
                 <div className="center">
-                    <h1 style={{ fontFamily: "" }}>Meet The Team</h1>
+                    <h1>Meet The Team</h1>
                     <p>placeholder placeholder placeholder</p>
                 </div>
             </div>
 
             <div className="page" style={{ backgroundColor: "#FBA31A" }}>
                 <div className="center">
-                    <h1 style={{ fontFamily: "diplomata sc" }}>OUR CORE VALUES</h1>
+                    <h1>OUR CORE VALUES</h1>
                     <p>WE, the Student Council, aim to act as representatives and role models of our open minded and diverse community, in order to foster a safe, enjoyable and effective learning environment. Through taking ownership and initiative, we grow as individuals and develop tools and skills to progress towards a better future. 
                     <br/><br/>“Education is a fundamental human right.”
                     <br/>-UNESCO</p>

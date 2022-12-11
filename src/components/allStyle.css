@@ -1,6 +1,6 @@
-body {
+body, input, textarea, button, select, option, a {
   margin: 0;
-  font-family: "Roboto Serif";
+  font-family: "Poppins";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* overflow-x: hidden; */
