@@ -54,8 +54,7 @@ const StudentCouncil = () => {
                     <h1 style={{ fontFamily: "diplomata sc" }}>OUR CORE VALUES</h1>
                     <p>WE, the Student Council, aim to act as representatives and role models of our open minded and diverse community, in order to foster a safe, enjoyable and effective learning environment. Through taking ownership and initiative, we grow as individuals and develop tools and skills to progress towards a better future. 
                     <br/><br/>“Education is a fundamental human right.”
-                    <br/>-UNESCO
-                    </p>
+                    <br/>-UNESCO</p>
                 </div>
             </div>
 
