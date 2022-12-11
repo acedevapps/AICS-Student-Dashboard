@@ -19,7 +19,7 @@ code { font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', mon
   align-items: center;
   padding: 1vh;
 }
-.topbar a { text-decoration: none; width: 20vw; text-align: center; height: min-content; color: white; }
+.topbar a { text-decoration: none; width: 18vw; text-align: center; height: min-content; color: white; }
 
 .link {
   color: #61dafb;
