@@ -1,6 +1,9 @@
 import React, { useState, useRef } from "react";
 import { useScript } from "../hooks/useScript";
 import jwt_deocde from "jwt-decode";
+import { dbURL } from "./Configurations";
+
+const dbUsersURL = dbURL + "/users";
 
 const Login = () => {
     
@@ -8,7 +11,7 @@ const Login = () => {
     const token = localStorage.getItem("login")
     const user = localStorage.getItem("user")
 
-    fetch('http://localhost:8080/users/'+user).then(response => response.json()).then(response => {
+    fetch(dbUsersURL+user).then(response => response.json()).then(response => {
         console.log(response.message)
         if (response.message !== "user not found") {
           
@@ -58,7 +61,7 @@ const Login = () => {
             localStorage.setItem("name", payload.name);
             localStorage.setItem("picture", payload.picture);
             
-            fetch('http://localhost:8080/users/'+parts[0])
+            fetch(dbUsersURL+parts[0])
                 .then(response => {
                     if (response.status === 404) {
                         const requestOptions = {
@@ -66,9 +69,8 @@ const Login = () => {
                             headers: { 'Content-Type': 'application/json' },
                             body: JSON.stringify({id: "0", name: payload.name, mail: parts[0], cred: userCred, token: token, link: payload.picture}),
                             mode: 'no-cors'
-                            
-                        }; // http://localhost:8080/users
-                        fetch('http://localhost:8080/users', requestOptions)
+                        };
+                        fetch(dbUsersURL, requestOptions)
                             .then(async response => {
                                 const isJson = response.headers.get('content-type')?.includes('application/json');
                                 const data = isJson && await response.json();
@@ -86,7 +88,7 @@ const Login = () => {
                                 console.error('There was an error!', error);
                             });
                     } else {
-                        fetch('http://localhost:8080/users/'+parts[0]+'/'+token)
+                        fetch(dbUsersURL+parts[0]+'/'+token)
                         .then(response => {
                             if (response.json().message === "user token replaced") {
                                 console.log("token updated")
