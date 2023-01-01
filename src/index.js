@@ -8,6 +8,8 @@ import Home from './pages/Home/Home';
 import Error from './pages/Error';
 import Login from './pages/Login';
 import StudentCouncil from './pages/StudentCouncil/StudentCouncil';
+import Clubs from './pages/Clubs/Clubs';
+import Updates from './pages/Updates/Updates';
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
@@ -54,7 +56,15 @@ const router = createBrowserRouter([
   {
     path: '/student-council',
     element: <StudentCouncil />,
-  }
+  },
+  {
+    path: '/clubs',
+    element: <Clubs />
+  },
+  {
+    path: '/updates',
+    element: <Updates />
+  },
 ])
 
 

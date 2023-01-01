@@ -6,6 +6,10 @@ body, input, textarea, button, select, option, a {
   /* overflow-x: hidden; */
 }
 
+div {
+  padding-top: 5vh;
+}
+
 code { font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace; }
 .topbar {
   z-index: 100;

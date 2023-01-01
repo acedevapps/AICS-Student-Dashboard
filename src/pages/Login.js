@@ -101,7 +101,7 @@ const Login = () => {
                 .then(data => this.setState({ totalReactPackages: data.total }));
 
         } else {
-            window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
+            window.location.href = 'https://LOGINFAILED';
         }
     };
 
